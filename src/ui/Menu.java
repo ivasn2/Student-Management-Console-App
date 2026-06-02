@@ -134,6 +134,11 @@ public class Menu {
                         "Возраст должен быть больше 0");
             }
 
+            if (ageStudent > 122) {
+                throw new IllegalArgumentException(
+                        "Возраст не должен быть больше 122");
+            }
+
             System.out.print("Введите курс (1-6): ");
             int studentCourse = scanner.nextInt();
 
@@ -185,6 +190,11 @@ public class Menu {
             if (newAge <= 0) {
                 throw new IllegalArgumentException(
                         "Возраст должен быть больше 0");
+            }
+
+            if (newAge > 122) {
+                throw new IllegalArgumentException(
+                        "Возраст не должен быть больше 122");
             }
 
             System.out.print("Введите новый курс (1-6): ");
